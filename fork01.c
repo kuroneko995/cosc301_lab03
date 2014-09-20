@@ -16,6 +16,7 @@ int main(int argc, char **argv) {
         value += 50;
     }
 
-    printf("%s %d\n", s, value);
+    pid_t my_process_id = getpid();
+    printf("%s with id %d, and my value is %d\n", s, my_process_id, value);
     return 0;
 }
